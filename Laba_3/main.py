@@ -184,14 +184,14 @@ def main():
     for i in range(pad, finishh):
         for j in range(pad, finishw):
             if image_GF1[i][j] > high:
-                image_GF1[i][j] = 255
+                image_GF1[i][j] = 0
             elif image_GF1[i][j] > low:
                 if is_border(image_GF1[i - 1:i + 2, j - 1:j + 2], high):
-                    image_GF1[i][j] = 255
-                else:
                     image_GF1[i][j] = 0
+                else:
+                    image_GF1[i][j] = 255
             else:
-                image_GF1[i][j] = 0
+                image_GF1[i][j] = 255
 
     cv2.namedWindow("Lab_3", cv2.WINDOW_AUTOSIZE)
     cv2.imshow("Lab_3", image_GF1)
