@@ -1,0 +1,3 @@
+/home/setet/Документы/GitHub/Multimedia_Processing/Laba_7/CMakeFiles/DisplayImage.dir
+/home/setet/Документы/GitHub/Multimedia_Processing/Laba_7/CMakeFiles/edit_cache.dir
+/home/setet/Документы/GitHub/Multimedia_Processing/Laba_7/CMakeFiles/rebuild_cache.dir
