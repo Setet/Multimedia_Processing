@@ -29,10 +29,10 @@ int main( int argc, char** argv )
 
 
     // all sorts of variables for settings
-    int iLowH = 170;
+    int iLowH = 0;
     int iHighH = 179;
 
-    int iLowS = 150; 
+    int iLowS = 111; 
     int iHighS = 255;
 
     int iLowV = 60;
@@ -121,10 +121,11 @@ int main( int argc, char** argv )
                 if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0)
                 {
                     //Draw a red line from the previous point to the current point
-                    //line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,0,255), 2);
+                    //rectangle(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,1,1,1), -1);
+                    rectangle(imgOriginal, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,1,1), -1);
 
-                    rectangle(imgOriginal ,pt1,pt2,vecColor,FILLED);
-                    rectangle(imgOriginal ,pt3,pt4,vecColor,FILLED);
+                    //rectangle(imgOriginal ,pt1,pt2,vecColor,FILLED);
+                    //rectangle(imgOriginal ,pt3,pt4,vecColor,FILLED);
 
                 }
 
